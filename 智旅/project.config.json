@@ -36,11 +36,13 @@
         "disableUseStrict": false,
         "minifyWXML": true,
         "showES6CompileOption": false,
-        "useCompilerPlugins": false
+        "useCompilerPlugins": false,
+        "ignoreUploadUnusedFiles": true,
+        "useStaticServer": true
     },
     "compileType": "miniprogram",
     "libVersion": "2.24.5",
-    "appid": "wxd885585d32135f61",
+    "appid": "wxfa930f73dde1858d",
     "projectname": "%E6%99%BA%E6%97%85",
     "simulatorType": "wechat",
     "simulatorPluginLibVersion": {},

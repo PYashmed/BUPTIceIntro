@@ -80,7 +80,7 @@ Page({
         //console.log(this.data.humidity,this.data.temp)
       },
       getHistory:function(){
-          let ak = "Td8qWasMIdlxrFzsRbNN0pGr0HWZXEKw";
+          let ak = "sjOwA04idfMjoUj8tj7yPZuTLEYNrdO6";
           let length = this.data.historyList.length;
           var that = this;
           for(var i=0;i<length-1;i++){
@@ -90,7 +90,7 @@ Page({
                 'Content-Type':'application/json'
             },
             success:function(res){
-                //console.log(res)
+                console.log(res)
                 var obj={};
                 let cityList = that.data.cityList;
                 obj.time=that.data.historyList[i].at.slice(0,7);

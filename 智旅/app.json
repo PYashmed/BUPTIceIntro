@@ -16,5 +16,11 @@
         "backgroundColor": "#fc8e34"
     },
     "debug": false,
-    "sitemapLocation": "sitemap.json"
+    "sitemapLocation": "sitemap.json",
+    "appid":"wxfa930f73dde1858d",
+    "permission": {
+        "scope.userLocation": {
+          "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+        }
+    }
 }

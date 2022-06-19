@@ -195,18 +195,86 @@ Page({
 // 这里是长按触发事件
   setfront: function () {
     console.log("setfront")
+    wx.request({
+        url:`http://api.heclouds.com/cmds?device_id=${devicesId}`,
+        header:{
+            'content-type':'application/json',
+            "api-key":`${api_key}`
+        },
+        method:'POST',
+        data:11,//长前进
+        success(res){
+          console.log("前进")
+          console.log(res)
+          console.log(res.data)
+        },
+        fail(res){
+            console.log(res)
+        }
+      })
   },
 
   setleft: function () {
     console.log("setleft")
+    wx.request({
+        url:`http://api.heclouds.com/cmds?device_id=${devicesId}`,
+        header:{
+            'content-type':'application/json',
+            "api-key":`${api_key}`
+        },
+        method:'POST',
+        data:22,//长左转
+        success(res){
+          console.log("前进")
+          console.log(res)
+          console.log(res.data)
+        },
+        fail(res){
+            console.log(res)
+        }
+      })
   },
 
   setright: function () {
     console.log("setright")
+    wx.request({
+        url:`http://api.heclouds.com/cmds?device_id=${devicesId}`,
+        header:{
+            'content-type':'application/json',
+            "api-key":`${api_key}`
+        },
+        method:'POST',
+        data:33,//长右转
+        success(res){
+          console.log("前进")
+          console.log(res)
+          console.log(res.data)
+        },
+        fail(res){
+            console.log(res)
+        }
+      })
   },
 
   setback: function () {
     console.log("setback")
+    wx.request({
+        url:`http://api.heclouds.com/cmds?device_id=${devicesId}`,
+        header:{
+            'content-type':'application/json',
+            "api-key":`${api_key}`
+        },
+        method:'POST',
+        data:44,//长后退
+        success(res){
+          console.log("前进")
+          console.log(res)
+          console.log(res.data)
+        },
+        fail(res){
+            console.log(res)
+        }
+      })
   },
   onHide:function(){
     let timer = this.data.timer;

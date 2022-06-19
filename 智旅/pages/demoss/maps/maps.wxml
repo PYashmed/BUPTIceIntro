@@ -8,10 +8,6 @@
     </view>
 </view>
 
-
-<view wx:for="{{cityList}}">
-    {{item.time}}:{{item.country}}{{item.city}}
-</view>
 <view class="table">
     <view wx:if="{{cityList}}" class="th0">城市足迹</view>
   <view class="tr bg-w">
@@ -19,7 +15,7 @@
     <view class="th">城市</view>
     <view class="th ">时间</view>
   </view>
-  <block wx:for="{{listData}}" wx:key="{{code}}">
+  <block wx:for="{{cityList}}" wx:key="{{code}}">
     <view class="tr bg-g" wx:if="{{index % 2 == 0}}">
       <view class="td">{{item.country}}</view>
       <view class="td">{{item.city}}</view>
